@@ -1,0 +1,86 @@
+.header {
+  .logo {
+    justify-content: center;
+  }
+}
+
+
+.section-search {
+  div {
+    .input {
+      .div-search {
+        padding: 15px 5px 15px 15px;
+        width: 500px;
+        height: 55px;
+        margin: 10px 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin-inline: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        .busca-personagem {
+          width: 497px;
+          height: 55px;
+          border-radius: 19px;
+          border: none;
+          outline: 0;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          &::placeholder {
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+          }
+        }
+        .btn-pesquisar {
+          width: 45px;
+          height: 45px;
+          transition: transform 0.3;
+          &:hover {
+            transform: scale(1.1);
+          }
+          &:disabled {
+            pointer-events: none;
+            filter: grayscale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    .imagem-personagem {
+      margin: 0 25px;
+      img {
+        width: 500px;
+        height: 458px;
+      }
+    }
+    .text-personagem {
+      position: relative;
+      width: 100%;
+      padding: 0 40px;
+      .nome-personagem {
+        margin: 20px 0;
+        font-size: 50px;
+        text-align: center;
+      }
+      .dados-personagem {
+        font-size: 13px;
+        color: black;
+      }
+    }
+  }
+}

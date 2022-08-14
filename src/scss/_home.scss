@@ -1,6 +1,10 @@
 .header {
+  display: flex;
+  justify-content: center;
   .logo {
-    justify-content: center;
+    margin-top: 30px;
+    width: 100rem;
+    height: 30rem;
   }
 }
 
@@ -9,34 +13,34 @@
   div {
     .input {
       .div-search {
-        padding: 15px 5px 15px 15px;
-        width: 500px;
-        height: 55px;
-        margin: 10px 10px;
-        border: 2px solid black;
-        border-radius: 20px;
+        padding: 1.5rem .5rem 1.5rem 1.5rem;
+        width: 50rem;
+        height: 5.5rem;
+        margin: 5rem 1rem 1rem 1rem;
+        border: .2rem solid black;
+        border-radius: 2rem;
         margin-inline: auto;
         overflow: hidden;
         display: flex;
         align-items: center;
         .busca-personagem {
-          width: 497px;
-          height: 55px;
-          border-radius: 19px;
+          width: 49.7rem;
+          height: 5.5rem;
+          border-radius: 1.9rem;
           border: none;
           outline: 0;
-          font-size: 20px;
+          font-size: 2rem;
           font-weight: bold;
           text-align: center;
           &::placeholder {
             font-weight: bold;
             text-align: center;
-            font-size: 20px;
+            font-size: 2rem;
           }
         }
         .btn-pesquisar {
-          width: 45px;
-          height: 45px;
+          width: 4.5rem;
+          height: 4.5rem;
           transition: transform 0.3;
           &:hover {
             transform: scale(1.1);
@@ -53,32 +57,38 @@
 
 
 .container {
-  margin: 40px 0;
+  margin: 1rem 10rem 0 10rem;
+  padding: 0 2rem;
+  width: 85%;
   display: flex;
   justify-content: center;
-  align-items: center;
   .info {
-    width: 100%;
+    width: 65%;
     display: flex;
     align-content: center;
     .imagem-personagem {
-      margin: 0 25px;
+      margin: 0 2.5rem;
+      padding: 6rem 0;
       img {
-        width: 500px;
-        height: 458px;
+        width: 50rem;
+        height: 40rem;
       }
     }
     .text-personagem {
       position: relative;
       width: 100%;
-      padding: 0 40px;
+      padding: 4rem 4rem;
       .nome-personagem {
-        margin: 20px 0;
-        font-size: 50px;
+        margin: 2rem 0;
+        font-size: 5rem;
+        font-family: 'Marvel', sans-serif;
+        font-weight: 700;
         text-align: center;
       }
       .dados-personagem {
-        font-size: 13px;
+        font-size: 1.6rem;
+        font-family: 'Marvel', sans-serif;
+        font-weight: 400;
         color: black;
       }
     }
